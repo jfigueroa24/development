@@ -1,26 +1,32 @@
 *{
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 body{
   background-color: hsl(212, 45%, 89%);
   max-width: 1440px;
+  margin: 0;
+}
+.qr-container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .qr-component{
   background-color: #fff;
-  margin: auto;
-  margin-top: 80px;
   border-radius: 10px;
-  width: 20%;
-  padding: 10px;
-  padding-bottom: 0;
+  padding: 16px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
 }
 
 .qr-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   font-size: 15px;
   font-family: "Outfit", sans-serif;
 }
@@ -29,27 +35,21 @@ body{
   color: hsl(218, 44%, 22%);
   margin: 0;
   text-wrap: balance;
+  margin: 16px 0 8px;
 }
 .qr-container p{
   color: hsl(216, 15%, 48%);
+  font-weight: 400;
+  margin: 8px 0 16px;
 }
 
-.qr-image-content{
-  background-image: url(images/image-qr-code.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.qr-image{
+  object-fit: cover;
   width:100%;
-  aspect-ratio: 1 / 1;
-  max-width: 213px;
   border-radius: 10px;
 }
 
-.qr-text{
-  padding: 20px;
-  text-align: center;
 
-}
 
 
 /*MEDIA QUERIES*/
@@ -57,25 +57,27 @@ body{
 @media (max-width: 370px) {
   .qr-component{
     background-color: #fff;
-    margin: auto;
-    margin-top: 80px;
     border-radius: 10px;
-    width: 50%;
-    padding: 10px;
-    padding-bottom: 0;
+    padding: 16px;
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
   .qr-container{
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    font-size: 8px;
+    align-items: center;
     font-family: "Outfit", sans-serif;
   }
-  .qr-text{
-    padding: 5px;
-    text-align: center;
-  
+  .qr-text h2{
+    font-size: 22px;
+    text-wrap: balance;
+
+  }
+  .qr-text p{
+    font-size: 15px;
   }
 }
