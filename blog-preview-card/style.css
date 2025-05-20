@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F4D04E;
+  max-width: 1440px;
+  margin: 0;
+}
+
+.card-container{
+  height: 100vh;
+  align-content: center;
+}
+
+.card{
+  background-color: #fff;
+  margin: auto;
+  max-width: 384px;
+  border: 1px solid #111111;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-shadow: 8px 8px #000;
+}
+
+.card-img{
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.card-text{
+  font-family: "Figtree", sans-serif;
+  line-height: 150%;
+  letter-spacing: 0;
+  margin: 12px 0;
+}
+
+.card-text__category{
+  padding: 4px 12px;
+  background-color: #F4D04E;
+  display: inline-block;
+  margin: 0;
+  font-weight: 900;
+  font-size: 14px;
+  color: #111111;
+  border-radius: 4px;
+}
+
+.card-text__date{
+  font-size: 14px;
+  color: #111111;
+}
+
+.card-text__title{
+  font-size: 24px;
+  color: #111111;
+}
+
+.card-text__title:hover, .card-text__title:active, .card-text__title:focus{
+  color: #F4D04E;
+}
+
+.card-text__description{
+  font-size: 16px;
+  color: #6B6B6B;
+}
+
+.card-profile{
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.card-profile__img{
+  width: 32px;
+  margin-right: 12px;
+}
+.card-profile__name{
+  font-family: "Figtree", sans-serif;
+  font-weight: 900;
+  font-size: 14px;
+  color: #111111;
+}
