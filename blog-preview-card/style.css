@@ -84,3 +84,16 @@ body{
   font-size: 14px;
   color: #111111;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 440px) {
+  .card{
+  max-width: 335px;
+  }
+}
+
+@media (max-width:375px) {
+  .card{
+  max-width: 327px;
+  }
+}
